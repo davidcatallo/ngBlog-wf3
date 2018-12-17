@@ -8,10 +8,18 @@ import { post } from 'selenium-webdriver/http';
 })
 export class PostComponent implements OnInit {
 
-  @Input() post: Object;
+  @Input() post;
   constructor() { }
 
   ngOnInit() {
   }
 
+  onLike() {
+    this.post.LoveIts++;
+    console.log(this.post);
+  }
+  onDislike() {
+    this.post.LoveIts--;
+    console.log(this.post);
+  }
 }
