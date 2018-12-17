@@ -15,11 +15,11 @@ export class PostComponent implements OnInit {
   }
 
   onLike() {
-    this.post.LoveIts++;
+    this.post.loveIts++;
     console.log(this.post);
   }
   onDislike() {
-    this.post.LoveIts--;
+    this.post.loveIts--;
     console.log(this.post);
   }
 }
